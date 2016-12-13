@@ -1,1 +1,19 @@
-'Analisador_Gerador_Ltk' 
+Programa: 	Analisador Gerador Ltk
+Versão:		5.0
+Autor:		Fábio Moura de Oliveira.
+
+Este programa foi criado em powerbasic, ele tem na versão 5.0, 3444 linhas.
+Gera todas as combinações possíveis para todos os jogos da loteria da caixa.
+Gera todas as combinações possíveis para os jogos 'MINAS_5' e 'LOTOMINAS' da intralot.
+Analisa um arquivo csv em um formato predeterminado e gera sentenças sql para serem inseridas no banco de dados ltk.
+
+
+Planos futuros:
+Baixador automático de resultados do jogos da intralot. (Recurso já disponível na versão FreePascal: https://github.com/fabiuz/ltk_lazarus)
+Baixador automático de resultados de jogos da caixa.
+Exportador de resultados para formato csv e excel
+Inseridor sql de resultados de jogos.
+Inserção manual de resultados.
+
+
+
