@@ -3,18 +3,19 @@ Copyright (c) 1996-2011 PowerBasic Inc.
 Englewood, Florida USA
 All Rights Reserved
 
-Primary source:  C:\Meus_Documentos\Ltk\Analisador_Gerador_Ltk\Analisador_Gerador_Ltk_5.0_Jkd_Ide\Analisador_Gerador_Ltk.bas   {198232 total lines}
-Target compilation:  Analisador_Gerador_Ltk.EXE
-Compile time:  0.9 seconds, at 13215466 lines/minute
+Primary source:  C:\Meus_Documentos\Ltk\Analisador_Gerador_Ltk\Analisador_Gerador_Ltk_5.0_Jkd_Ide\Analisador_Gerador_Ltk.tmp   {216157 total lines}
+Target compilation:  C:\Meus_Documentos\Ltk\Analisador_Gerador_Ltk\Analisador_Gerador_Ltk_5.0_Jkd_Ide\Analisador_Gerador_Ltk.exe
+Compile time:  1.0 seconds, at 12969420 lines/minute
 
-61936 bytes compiled code, 80540 bytes RTLibrary,
-7672 bytes string literals, and 11128 bytes dgroup.
+221792 bytes compiled code, 82452 bytes RTLibrary,
+12000 bytes string literals, and 15632 bytes dgroup.
 Executable stack size:  1048576 bytes.
-Disk image: 163840 bytes   Memory image: 99340 bytes.
+Disk image: 345088 bytes   Memory image: 110084 bytes.
 
 Component Files:
 ----------------
-C:\Meus_Documentos\Ltk\Analisador_Gerador_Ltk\Analisador_Gerador_Ltk_5.0_Jkd_Ide\Analisador_Gerador_Ltk.bas
+C:\Meus_Documentos\Ltk\Analisador_Gerador_Ltk\Analisador_Gerador_Ltk_5.0_Jkd_Ide\Analisador_Gerador_Ltk.tmp
+C:\PBWIN10\IDE_PARA_POWER_BASIC\JK-IDE\PREPROCESS.INC
 C:\PBWIN10\WINAPI\WIN32API.INC
 C:\PBWIN10\WINAPI\SDKDDKVER.INC
 C:\PBWIN10\WINAPI\NTSTATUS.INC
@@ -96,10 +97,12 @@ C:\PBWIN10\WINAPI\MMSYSTEM.INC
 C:\PBWIN10\WINAPI\URLMON.INC
 C:\PBWIN10\WINAPI\WINDOWSX.INC
 C:\PBWIN10\WINAPI\PBFORMS.INC
+C:\PBWIN10\IDE_PARA_POWER_BASIC\JK-IDE\DEBUG_NEW.INC
 
 
 Code Extracted:
 ---------------
+ISBAD_PTR
 RTLMOVEMEMORY
 RTLCOPYMEMORY
 RTLFILLMEMORY

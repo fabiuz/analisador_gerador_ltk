@@ -1473,9 +1473,6 @@ CALLBACK FUNCTION Janela_Principal_CBK()
                     IF NOT ISFOLDER(strdiretorio_csv_processado) THEN
                         strErro += IIF$(strErro <> "", $CRLF, "") + "Diretorio '" + strDiretorio_csv_processado + "', onde ficarão os arquivos *.csv processados, não existe."
                     END IF
-					
-					' Coloca uma barra no final, 
-					strDiretorio_csv_processado += iif$(right$(strDiretorio_csv_processado, 1) = "/", "", "/")
 
                     LOCAL strArquivo_CSV AS STRING
                     CONTROL GET TEXT hJanela_Principal, %TXT_ARQUIVO_CSV TO strArquivo_CSV
@@ -1869,22 +1866,20 @@ FUNCTION Validar_Campos_Loteria (BYVAL strArquivoOrigem AS STRING, BYREF strLinh
 
         LOCAL uX AS LONG
         LOCAL uY AS LONG
-		
-		' Em 31/12/2016, bug localizado alterado de 3 pra 4, as bolas começam sempre na coluna 4.		
-        FOR uX = 4 TO uCampos_Quantidade
+        FOR uX = 3 TO uCampos_Quantidade
             FOR uY = uX + 1 TO uCampos_Quantidade
                 ' Se jogo é DUPLASENA, haverá 12 bolas, onde as seis primeiras correspondem ao primeiro sorteio
                 ' e, as seis últimas bolas, correspondem ao segundo sorteio.
                 ' então, não podemos comparar o primeiro sorteio com o segundo.
-                ' O primeiro sorteio começa no índice 4 e vai até 9.
-                ' O segundo sorteio começa em 10 e vai até 15.
-                ' Então, se uX é menor ou igual a 9, estamos no primeiro sorteio, então
-                ' não devemos comparar com o segundo sorteio que começa em uY = 10
+                ' O primeiro sorteio começa no índice 3 e vai até 8.
+                ' O segundo sorteio começa em 9 e vai até 14.
+                ' Então, se uX é menor ou igual a 8, estamos no primeiro sorteio, então
+                ' não devemos comparar com o segundo sorteio que começa em uY = 9
                 IF uA = 10 THEN
                     '
                 END IF
 
-                IF uX <= 9 AND uY > 9 THEN
+                IF uX <= 8 AND uY > 8 THEN
                     EXIT FOR
                 END IF
 
@@ -1892,8 +1887,7 @@ FUNCTION Validar_Campos_Loteria (BYVAL strArquivoOrigem AS STRING, BYREF strLinh
                 IF strCampos(uX) = strCampos(uY) THEN
                     strErro += "Erro, linha " + FORMAT$(uA) + ", campos " + FORMAT$(uX) + " e " + FORMAT$(uY) + "." + $CRLF
                     strErro += "Valores iguais em tais campos." + $CRLF
-                    strErro += "Não pode haver bolas idênticas." + $CRLF
-					strErro += "Valor: " + strCampos(uX) 
+                    strErro += "Não pode haver bolas idênticas."
                     FUNCTION = -1
                     EXIT FUNCTION
                 END IF
@@ -2803,7 +2797,7 @@ FUNCTION Gerar_Insert_Where_Todas_Combinacoes(BYVAL strArquivoOrigem AS STRING, 
     DIM strCampos() AS STRING
     DIM uCampos AS LONG
 
-    uCampos = PARSECOUNT(strLinha, ANY "_;")
+    uCampos = PARSECOUNT(strLinha, ANY ";")
     REDIM strCampos(1 TO uCampos)
 
     ' Verificar se uCampos é maior que 4 campos
