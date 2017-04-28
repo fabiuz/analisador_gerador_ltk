@@ -1,19 +1,21 @@
-Programa: 	Analisador Gerador Ltk
-Vers„o:		5.0
-Autor:		F·bio Moura de Oliveira.
+# Programa: 	Analisador Gerador Ltk
+# Vers√£o:		5.0
+# Autor:		F√°bio Moura de Oliveira.
+# Obs.: Este foi o primeiro programa com maior linha de texto que fiz, atualmente, n√£o estou realizando nenhum tipo de atualiza√ß√£o.
+Atualmente, estou focando em c#.
 
-Este programa foi criado em powerbasic, ele tem na vers„o 5.0, 3444 linhas.
-Gera todas as combinaÁıes possÌveis para todos os jogos da loteria da caixa.
-Gera todas as combinaÁıes possÌveis para os jogos 'MINAS_5' e 'LOTOMINAS' da intralot.
-Analisa um arquivo csv em um formato predeterminado e gera sentenÁas sql para serem inseridas no banco de dados ltk.
+Este programa foi criado em powerbasic, ele tem na vers√£o 5.0, 3444 linhas.
+Gera todas as combina√ß√µes poss√≠veis para todos os jogos da loteria da caixa.
+Gera todas as combina√ß√µes poss√≠veis para os jogos 'MINAS_5' e 'LOTOMINAS' da intralot.
+Analisa um arquivo csv em um formato predeterminado e gera senten√ßas sql para serem inseridas no banco de dados ltk.
 
 
 Planos futuros:
-Baixador autom·tico de resultados do jogos da intralot. (Recurso j· disponÌvel na vers„o FreePascal: https://github.com/fabiuz/ltk_lazarus)
-Baixador autom·tico de resultados de jogos da caixa.
+Baixador autom√°tico de resultados do jogos da intralot. (Recurso j√° dispon√≠vel na vers√£o FreePascal: https://github.com/fabiuz/ltk_lazarus)
+Baixador autom√°tico de resultados de jogos da caixa.
 Exportador de resultados para formato csv e excel
 Inseridor sql de resultados de jogos.
-InserÁ„o manual de resultados.
+Inser√ß√£o manual de resultados.
 
 
 
